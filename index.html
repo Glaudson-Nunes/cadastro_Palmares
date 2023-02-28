@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="icons/cropped-logo_oficial.png">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-total">
+
+
+        <header class="cabecalho">
+            
+            <div class="logo">
+
+                <img src = "icons/cropped-logo_oficial.png" width="230px">
+                
+            </div>
+
+            <div class="menu">
+
+                <ul>
+                    
+                   
+                    <li> <img class="imgM" src = "icons/icons8-senha-24.png"> Criar Conta</li>
+                    <li class="btSuporte"> <img class="imgM" src="icons/icons8-suporte-60.png"> Suporte</li>
+                    <li>Versâo Demo</li>
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section class="box1">
+
+            <h1 class="titulosG">Cadastros de casas</h1>
+
+            <button class="bts1">Criar conta </button>
+            <button class="bts1" id = "bts2">Ja tenho acesso</button>
+
+
+        </section>
+
+        <section class="box2">
+
+            <h1 class="titulosG">Criando acesso</h1>
+
+            <input class="inputsG" id = "inputNameUsu" type = "text" placeholder="Nome do adm" value="">
+            <input class="inputsG" id = "inputemail" type = "email" placeholder="E-mail de acesso" value="">
+            <input class="inputsG" id = "inputsenha" type = "password" placeholder="Senha" value="">
+            <input class="inputsG" id = "inputconfirmarsenha" type = "password" placeholder="Confirmar Senha" value="">
+            <input type = "button" id = "btsalvar" value = "Criar Conta">
+            
+
+        </section>
+
+
+        <section class="box3">
+            
+          <div class="desc">
+
+            
+
+            <h1 class="titulosG"> <img id = "setavoltar" src="icons/icons8-seta-longa-à-esquerda-50.png" width="40px"> Suporte para contato</h1>
+            <p class="textG">E-mail: nunesglaudson235@gmail.com</p>
+            <p class="textG">Telefone: +55 81 99334-4030</p>
+
+            <img src = "icons/eu.jfif" width="200px">
+            <p class="textG">Glaudson Nunes estudante e desenvolvedor de software</p> 
+
+          </div>
+
+        </section>
+
+        <section class="box4">
+
+            <h1 class="titulosG">Acessar Sistema</h1>
+
+            <input class="inputsG" id = "EmailAcesso" type = "email" placeholder="E-mail de acesso">
+            <input class="inputsG" id = "SenhaAcesso" type = "password" placeholder="Senha">
+            <input type = "button" id = "btAcessarConta" value = "Entrar">
+
+        </section>
+
+        <section class="box5">
+
+            <header class="cabecalho2">
+            
+                <div class="logo2">
+
+                    <h1>Bem Vindo</h1>
+                    <p class="receberIni"></p>
+
+                </div>
+
+                <div class="menu2">
+
+                    <ul>
+
+                        <li>Conectado <img src="icons/icons8-conectado-48.png" width="35px"> </li>
+                        <li class="btsair">Sair</li>
+
+                    </ul>
+
+                </div>
+
+            </header>
+
+            <div class="TelaCadastros">
+
+                <div class="btCadastrar">
+
+                    <button class="btvc1"><img src="icons/icons8-mais-50.png" width="25px">  Cadastra</button>
+                    <button class="btvc"> Visualizar Cadastros</button>
+
+                    <div class="inputsCadastro">
+                        
+                        <input class="inputsG2" id = "ipName"  type = "text" placeholder="Nome do beneficiario">
+                        <input class="inputsG2" id = "ipTele" type = "number" placeholder="Telefone">
+                        <input class="inputsG2" id = "ipCpf" type = "number" placeholder="CPF">
+                        <input class="inputsG2" id = "ipNcasa" type="text" placeholder="Numero da casa">
+                        <input class="inputsG2" id = "ipDataN" type="date" placeholder="Data do cadastro">
+                        <button class="btvc" id = "btSalvarS">Salvar</button>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="visualizarCadastros">
+
+                <div class="text1">
+
+                    <h1 class="titulosG">Cadastrados</h1>
+
+                </div>
+
+                <div class="boxInf">
+ 
+                   <div class="infor">
+
+                    <p>ID</p>
+                    <p>Nome</p>
+                    <p>Sobre-Nome</p>
+                    <p>Telefone</p>
+                    <p>CPF</p>
+                    <p>Numero residencia</p>
+                    <p>Data</p>
+                    <p>Açoes</p>
+
+                   </div>
+
+                   <div class="boxcadastros"> 
+
+                    <p class="receberId"></p>
+                    <p class="receberNome"></p>
+                    <p class="receberTelefone"></p>
+                    <p class="recebercpf"></p>
+                    
+                    <p class="receberNumerocasa"></p>
+                 
+                    <button class="btDelet">Delete</button>
+
+                </div>
+
+
+                </div>
+
+                <div class="fechar">
+                    
+                    <h1>X</h1>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+<script src="scripts/navegcaoTelas.js"></script>
+<script src="scripts/CriandoConta.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="scripts/acessoConta.js"></script>
+<script src="scripts/alerts.js"></script>
+<script src="scripts/Cadastrando.js"></script>
+<script src="scripts/save.js"></script>
+</body>
+
+</html>
